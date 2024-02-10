@@ -26,7 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Player Management</h1>
+      <h1>Puppy Bowl</h1>
+      <h2>Management</h2>
       <NewPlayerForm onPlayerAdded={handlePlayerAdded} />
       {selectedPlayerId ? (
         <>

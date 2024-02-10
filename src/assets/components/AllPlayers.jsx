@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function AllPlayers({ onSelectPlayer }) {
+export default function AllPlayers({ onSelectPlayer, refreshPlayers }) {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function AllPlayers({ onSelectPlayer }) {
     }
 
     fetchAllPlayers();
-  }, []);
+  }, [refreshPlayers]);
 
   function handlePlayerClick(playerId) {
     onSelectPlayer(playerId);
