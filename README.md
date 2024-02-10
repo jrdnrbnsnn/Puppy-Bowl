@@ -1,7 +1,7 @@
 # React + Vite
 
 Website 
-https://65c74e08e29cb753dc86ae1c--mellifluous-lily-b9e3bf.netlify.app/
+https://mellifluous-lily-b9e3bf.netlify.app/
 
 [This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
