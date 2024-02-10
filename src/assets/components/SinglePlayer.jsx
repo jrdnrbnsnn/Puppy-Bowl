@@ -46,11 +46,9 @@ export default function SinglePlayer({ selectedPlayerId }) {
         alt={`${player.name}`}
         style={{ width: "200px", height: "200px" }}
       />
-      <p>Breed: {player.breed}</p>{" "}
-      {/* Assuming 'breed' is a property you're interested in */}
+      <p>Breed: {player.breed}</p>
       <p>Status: {player.status}</p>
       <p>Team ID: {player.teamId}</p>
-      {/* Add more player details as needed */}
     </div>
   );
 }
