@@ -4,10 +4,13 @@ import NewPlayerForm from "./assets/components/NewPlayerForm";
 import AllPlayers from "./assets/components/AllPlayers";
 import SinglePlayer from "./assets/components/SinglePlayer";
 import DeletePlayer from "./assets/components/DeletePlayer";
+import SearchBar from "./assets/components/SearchBar";
+import SearchResultsList from "./assets/components/SearchResultsList";
 
 function App() {
   const [selectedPlayerId, setSelectedPlayerId] = useState(null);
   const [refreshPlayers, setRefreshPlayers] = useState(false);
+  const [results, setResults] = useState([]);
 
   const handleSelectPlayer = (playerId) => {
     setSelectedPlayerId(playerId);
@@ -26,6 +29,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="search-bar-container">
+        <SearchBar setResults={setResults} />
+        <SearchResultsList results={results} />
+      </div>
       <h1>Puppy Bowl</h1>
       <h2>Management</h2>
       <NewPlayerForm onPlayerAdded={handlePlayerAdded} />
