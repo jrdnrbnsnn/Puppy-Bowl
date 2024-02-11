@@ -31,7 +31,10 @@ function App() {
     <div className="App">
       <div className="search-bar-container">
         <SearchBar setResults={setResults} />
-        <SearchResultsList results={results} />
+        <SearchResultsList
+          results={results}
+          onSelectPlayer={handleSelectPlayer}
+        />
       </div>
       <h1>Puppy Bowl</h1>
       <h2>Management</h2>
