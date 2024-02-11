@@ -39,12 +39,13 @@ export default function SinglePlayer({ selectedPlayerId }) {
   if (!player) return <p>No player details available.</p>;
 
   return (
-    <div>
+    <div className="profile-card">
       <h1>{player.name}</h1>
       <img
         src={player.imageUrl}
         alt={`${player.name}`}
         style={{ width: "200px", height: "200px" }}
+        n
       />
       <p>Breed: {player.breed}</p>
       <p>Status: {player.status}</p>
